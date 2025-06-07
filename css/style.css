@@ -849,8 +849,6 @@ BTN FORMULAIRE
       }
       
   
-  /* Ajustes responsivos adicionales para imágenes parallax */
-@media (max-width: 768px) {
     .parallax-header {
       background-attachment: scroll;
       background-size: cover;
