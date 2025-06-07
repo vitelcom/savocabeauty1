@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prendre Rendez-Vous</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <a href="index.html">
+        <img src="img/logo-savoca.png" alt="Savoca Beauty logo" class="logo-savoca">
+      </a>
+
+      <div class="header-top">
+        <h1>Savoca Beauty</h1>
+
+        <!-- Icono Burger -->
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="coiffeur.html">Coiffeur</a></li>
+          <li><a href="barbier.html">Barbier</a></li>
+          <li><a href="rendez-vous.html">Prendre rendez-vous</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main-content">
+
+      <!-- ========== INTRO ========== -->
+      <section class="intro">
+        <h2>Prendre Rendez-Vous</h2>
+        <p>Veuillez remplir le formulaire pour réserver votre créneau.</p>
+      </section>
+
+      <!-- ========== FORMULAIRES CONNEXION & CRÉATION DE COMPTE ========== -->
+<section class="rendezvous-section">
+    <!-- Formulaire de Connexion -->
+    <div id="connexion-section">
+      <form id="rendezvous-form" class="form-section">
+        <h2>Connexion</h2>
+  
+        <div class="form-group">
+          <label for="identifiant">Identifiant:</label>
+          <input type="text" id="identifiant" name="identifiant" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+  
+        <div class="forgot-password">
+          <a href="#" id="open-modal">Mot de passe oublié?</a>
+        </div>
+  
+        <button type="submit" class="submit-btn">Envoyer</button>
+  
+        <p class="register-link" style="text-align: center; margin-top: 20px;">
+          Vous n'avez pas encore de compte ?
+          <a href="#" id="show-register">Créer un compte</a>
+        </p>
+      </form>
+    </div>
+  
+    <!-- Formulaire de Création de Compte -->
+    <div id="register-container" class="hidden">
+      <form id="register-form" class="form-section">
+        <h2>Créer un compte client</h2>
+  
+        <div class="form-group">
+          <label for="prenom">Prénom:</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="register-email">Adresse email:</label>
+          <input type="email" id="register-email" name="email" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="register-password">Mot de passe:</label>
+          <input type="password" id="register-password" name="password" required>
+        </div>
+  
+        <button type="submit" class="submit-btn">Créer le compte</button>
+      </form>
+    </div>
+  </section>
+  
+
+      <!-- ========== FOOTER ========== -->
+      <footer class="footer">
+        <p>&copy; 2025 Mon Salon. Tous droits réservés.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </footer>
+    </main>
+
+    <!-- ========== MODAL ========== -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Récupération du mot de passe</h2>
+        <p>Veuillez contacter notre service client pour récupérer votre mot de passe.</p>
+      </div>
+    </div>
+
+    <!-- ========== COOKIE BANNER ========== -->
+    <div id="cookie-banner" class="cookie-banner">
+      <p>Ce site utilise des cookies pour améliorer votre expérience. <a href="#">En savoir plus</a>.</p>
+      <button id="accept-cookies">Accepter</button>
+    </div>
+
+  </div>
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>
+
