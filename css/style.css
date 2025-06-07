@@ -849,6 +849,8 @@ BTN FORMULAIRE
       }
       
   
+  /* Ajustes responsivos adicionales para imágenes parallax */
+@media (max-width: 768px) {
     .parallax-header {
       background-attachment: scroll;
       background-size: cover;
@@ -904,5 +906,5 @@ BTN FORMULAIRE
     .barbier-block .overlay p {
       font-size: 1em;
     }
-  
+  }
   
