@@ -849,4 +849,62 @@ BTN FORMULAIRE
       }
       
   
+  /* Ajustes responsivos adicionales para imágenes parallax */
+@media (max-width: 768px) {
+    .parallax-header {
+      background-attachment: scroll;
+      background-size: cover;
+      height: 50vh;
+      padding: 20px;
+      flex-direction: column;
+    }
+  
+    .parallax-content h1 {
+      font-size: 1.8em;
+    }
+  
+    .parallax-header p {
+      font-size: 1em;
+    }
+  
+    .coiffeur-block {
+      background-attachment: scroll;
+      height: auto;
+      padding: 40px 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .coiffeur-block .overlay {
+      padding: 20px;
+    }
+  
+    .coiffeur-block .overlay h2 {
+      font-size: 1.8em;
+    }
+  
+    .coiffeur-block .overlay p {
+      font-size: 1em;
+    }
+  
+    .barbier-block {
+      background-attachment: scroll;
+      height: auto;
+      padding: 40px 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .barbier-block .overlay {
+      padding: 20px;
+    }
+  
+    .barbier-block .overlay h2 {
+      font-size: 1.8em;
+    }
+  
+    .barbier-block .overlay p {
+      font-size: 1em;
+    }
+  }
   
